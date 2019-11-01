@@ -1,0 +1,24 @@
+2)Suponha que v[i] = i para todo i. Execute
+a função busca_binaria() com n = 9 e x =
+3. Repita o exercício com n = 14 e x = 7.
+Repita o exercício com n = 15 e x = 7.
+
+1.
+inicio	final	meio	x	n	
+   0	  8       4     3 	9
+   0      3	  1	
+   2      3       2
+   3      3       3
+
+
+2.
+inicio	final	meio	x	n	
+   0	 13      16     7 	14
+   7	 13      10     
+   7      9      8
+   7      7      7
+
+3.
+inicio	final	meio	x	n	
+   0	 14      7      7	15
+  

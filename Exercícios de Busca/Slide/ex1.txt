@@ -1,0 +1,14 @@
+1)Em um vetor ordenado, quais os
+números máximos de comparações
+necessárias para determinar se um
+elemento faz parte de vetores com
+tamanhos 50, 1000 e 300 utilizando a
+busca binária?
+
+usando 3,3 * log n (base 10) == log n (base 2) (na calculadora a baase 10 é automatica)
+
+50 = 6
+
+1000 = 10
+
+300 = 9

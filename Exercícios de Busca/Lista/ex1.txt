@@ -1,0 +1,11 @@
+1. Qual o número máximo de iterações necessárias para localizar um valor em vetores de
+tamanhos 100, 5.000 e 10.000.000, respectivamente, utilizando o algoritmo de busca
+binária?
+
+usando 3,3 * log n (base 10) == log n (base 2) (na calculadora a baase 10 é automatica)
+
+100 = 7 (deu 6,6 mas pegamos o supremo)
+
+5.000 = 13
+
+10.000.000 = 24 (deu 23,1 mas pegamos o supremo)

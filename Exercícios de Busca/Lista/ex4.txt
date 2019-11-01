@@ -1,0 +1,11 @@
+4. Verifique se a seguinte implementação do algoritmo de busca binária funciona corretamente.
+
+int buscaBinaria2(int a[], int n, int x) {
+	int inicio = 0, final = n, meio;
+	while(inicio < final) {
+		meio = (inicio + final) / 2;
+		if(a[meio] < x) inicio = meio+1;
+ 		else inicio = meio; /erro nesse else (deveria ser final = meio)
+ 	}
+ 	return inicio; (deveria retornar meio)
+}

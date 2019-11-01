@@ -1,0 +1,5 @@
+3. Considere o vetor v da questão anterior. Qual o número máximo de iterações para
+determinar se um valor faz parte deste vetor se for utilizado o algoritmo de busca
+sequencial?
+
+Resposta: 18 iterações
