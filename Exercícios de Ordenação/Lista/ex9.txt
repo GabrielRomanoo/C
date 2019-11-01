@@ -1,0 +1,21 @@
+9. Submetendo o vetor v = {77, 21, 55, 33, 99} indexado por 0..4 à função quickSort
+teremos a seguinte sequência de invocações da função (observe a indentação):
+ quickSort (v,0,4)
+ quickSort (v,0,1)
+ quickSort (v,3,4)
+
+Repita o exercício com o vetor v = {55, 44, 22, 11, 66, 33} indexado por 0..5. 
+
+       0   1   2   3   4   5
+ v = {55, 44, 22, 11, 66, 33} 
+
+
+quickSort (v,0,5)
+	quickSort (v,0,1)
+	quickSort (v,2,5)
+		quickSort (v,2,3)
+		quickSort (v,4,5)				
+			
+
+       0   1   2   3   4   5
+ v = {11, 22, 33, 44, 55, 66} 				

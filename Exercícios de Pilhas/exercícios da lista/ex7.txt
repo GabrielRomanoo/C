@@ -1,0 +1,20 @@
+7. Uma palavra é uma palíndromo se a sequência de letras que a forma é a mesma seja ela lida
+da esquerda para a direita ou vice-versa. Exemplos: arara, raiar, hanah. Escreva uma função
+que, dada uma palavra, devolve true caso a palavra seja uma palíndromo, e false, caso
+contrário. Use uma pilha para verificar se a palavra é palíndromo.
+
+bool palindromo (const char * s) { <- string
+	pilha p;
+	int i;
+	stack_init(&p);
+	for (i = 0; s[i] != '\0'; i++) {
+		push(&p,s[i]);
+	}
+	i = 0;
+	while (!stack_isempty(p)) {  //stack_isempty retorna verdadeiro se a lista estiver vazia, dessa forma, é botado o !, para que se nao estiver vazia, o laço while continue
+		if (pop(&p) != s[i++]) {
+			return false;
+		}
+	}
+	return true;
+}

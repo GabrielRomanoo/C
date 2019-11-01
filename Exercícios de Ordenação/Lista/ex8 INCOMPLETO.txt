@@ -1,0 +1,56 @@
+8. Simule a execução do algoritmo de ordenação Quicksort para um vetor de caracteres com
+as seguintes chaves: Q, U, I, C, K, S, O, R, T. 
+
+O vetor é varrido da esquerda para a direita até
+que seja encontrado um elemento ai = x
+Sendo então varrido da direita para a esquerda
+até que seja encontrado um elemento aj = x
+
+		0  1  2  3  4  5  6  7  8	
+		Q  U  I  C  K  S  O  R  T
+
+pivo: 8/2 = 4 (K)
+e,i = 0
+d,j = 8
+
+		Q  U  I  C  K  S  O  R  T
+		i	    P		j
+
+		Q  U  I  C  K  S  O  R  T
+		i	    P
+			    j
+
+		K  U  I  C  Q  S  O  R  T
+		P  i     j
+
+		K  U  I  C  Q  S  O  R  T
+		P  i  j
+
+		K  I  U  C  Q  S  O  R  T
+		P  j  i
+
+		K  I
+		P  j	 
+		i
+
+		I  K
+		j  P  
+  		   i
+
+ 			  C  Q  S  O  R  T
+			  i	P        j
+
+			
+	
+
+
+			    
+	
+
+		   	
+			    
+
+
+		
+
+

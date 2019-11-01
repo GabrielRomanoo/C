@@ -1,0 +1,15 @@
+5. O vetor abaixo é um heap decrescente?
+161 41 101 141 71 91 31 21 81 17 16
+
+
+					161
+			41				101	
+	141			71		91		31
+21		81	  17         16
+
+
+Resp: NAO
+
+			41					
+	141			71      <- AQUI NAO ESTÁ CERTO
+		

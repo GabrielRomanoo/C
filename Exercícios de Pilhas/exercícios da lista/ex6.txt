@@ -1,0 +1,14 @@
+6. Escreva uma rotina que transfira os elementos da pilha P1 para a pilha P2 de modo que os
+elementos em P2 estejam na mesma ordem que em P1 usando apenas uma pilha adicional
+
+void stack_copy (pilha *p2, pilha p1) {
+	pilha p3;
+	stackinit(&p3);
+	stackinit(p2);
+	while (!stack_isempty(p1)){
+		push(&p3, pop(&p1));
+	}
+	while (!stack_isempty(p3)){
+		push(p2, pop(&p3));
+	}
+}

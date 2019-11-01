@@ -1,0 +1,8 @@
+2. Um algoritmo é executado em 10 segundos para uma entrada de tamanho 50. Se o
+algoritmo é quadrático, quanto tempo em segundos ele gastará, aproximadamente, no
+mesmo computador, se a entrada tiver tamanho 100?
+QUADRATICO: QUADRUPLICA
+
+a) 10 b) 20 c) 40 d) 100 e) 500
+
+RESP: LETRA C

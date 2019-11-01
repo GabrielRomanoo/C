@@ -1,0 +1,195 @@
+7. Simule a execução do algoritmo de ordenação Heapsort para um vetor de caracteres com
+as seguintes chaves: H, E, A, P, S, O, R, T.
+
+HEAP DECRESCENTE
+
+v[]= {H E A P S O R T}
+
+			H
+		E		A
+	P	      S     O        R
+   T
+
+MONTAGEM DO HEAP
+
+1 PASSO: INSERIR O P NO HEAP
+
+			H
+		E		A
+	T	      S     O        R
+   P
+
+2 PASSO: INSERIR O A NO HEAP
+
+			H
+		E		R
+	T	      S     O        A
+   P
+
+3 PASSO: INSERIR O E NO HEAP
+
+			H
+		T		R
+	E	      S     O        A     
+   P
+
+
+			H
+		T		R
+	P	      S     O        A     
+   E
+
+
+4 PASSO: INSERIR O H NO HEAP
+
+			T
+		H		R
+	P	      S     O        A     
+   E
+
+
+			T
+		S		R
+	P	      H     O        A     
+   E
+
+
+heap = {T,S,R,P,H,O,A,E}
+
+ORDENAÇÃO
+
+1 PASSO:
+
+			E
+		S		R
+	P	   H       O        A
+   T <- ja esta no lugar certo
+
+			S
+		E		R
+	P	   H       O        A
+    
+
+
+			S
+		P		R
+	E	   H       O        A
+    
+
+heap = {S,P,R,E,H,O,A,T}
+
+2 PASSO:
+
+			A  <- foi pra cima
+		P		R
+	E	   H       O        S <- ja esta no lugar certo
+
+
+			R
+		P		O
+	E	   H       A        
+
+heap = {R,P,O,E,H,A,S,T}
+
+3 PASSO: 
+
+			R
+		P		O
+	E	   H       A <- vai pra cima
+
+			A
+		P		O
+	E	   H       R <- ja esta no lugar certo
+
+			P
+		A		O
+	E	   H   
+
+			P
+		H		O
+	E	   A      
+
+
+heap = {P,H,O,E,A,R,S,T}
+
+4 PASSO: 
+
+			P
+		H		O
+	E	   A <-vai pra cima
+
+			A
+		H		O
+	E	   P <- ja esta no lugar certo
+
+			O
+		H		A
+	E	   
+
+
+heap = {O,H,A,E,P,R,S,T}
+
+5 PASSO:
+
+
+			O
+		H		A
+	E <- vai pra cima
+
+
+			E
+		H		A
+	O <- ja esta no lugar certo
+
+
+			H
+		E		A
+
+
+heap = {H,E,A,O,P,R,S,T}
+
+6 PASSO:
+
+
+			H 
+		E		A <- vai pra cima
+
+
+			A
+		E		H <- JA ESTA NO LUGAR CERTO
+
+
+			E
+		A		
+
+
+heap = {E,A,H,O,P,R,S,T}
+
+7 PASSO:
+
+				A
+		E <- ja esta no lugar certo
+
+heap = {A,E,H,O,P,R,S,T}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+    

@@ -1,0 +1,64 @@
+1. Utilizando o algoritmo de conversão de infixa para pós-fixa, converta para a forma pós-fixa
+as seguintes expressões na forma infixa (mostre o conteúdo da pilha e o estado da
+expressão pós-fixa para cada símbolo da expressão infixa):
+
+a)
+Infixa 			simb		pos-fixa	pilha
+5+2*4-1			5		5		
+			+		5		+
+			2		52		+
+			*		52		+,*
+			4		524		+,*
+			-		524*+		-
+			1		524*+1		-
+					524*+1-
+			
+
+--------------------------------------------------------------
+
+b)
+Infixa 			simb		pos-fixa	pilha
+(3+6)/(5-2)*4		(				(
+			3		3		(
+			+		3		(,+
+			6		36		(,+
+			)		36+		
+			/		36+		/
+			(		36+		/,(
+			5		36+5		/,(
+			-		36+5		/,(,-
+			2		36+52		/,(,-
+			)		36+52-		/	
+			*		36+52-/		*
+			4		36+52-/4	*
+					36+52-/4*
+
+--------------------------------------------------------------
+
+c)
+Infixa 			simb		pos-fixa	pilha
+((2+6)+(8-1))/3+7	(				(
+			(				(,(
+			2		2		(,(
+			+		2		(,(,+
+			6		26		(,(,+
+			)		26+		(
+			+		26+		(,+
+			(		26+		(,+,(
+			8		26+8		(,+,(
+			-		26+8		(,+,(,-
+			1		26+81		(,+,(,-
+			)		26+81-		(,+
+			)		26+81-+		
+			/		26+81-+		/
+			3		26+81-+3	/
+			+		26+81-+3/	+      <- + tem prioridade menor ou igual ao /, entao desempilha o /
+			7		26+81-+3/7	+	
+					26+81-+3/7+
+
+
+
+
+
+
+

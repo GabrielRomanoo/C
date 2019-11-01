@@ -1,0 +1,14 @@
+4. Qual o comportamento assintótico das
+funções abaixo?
+
+a) f(n) = n^2 + 2^n + 10 => f(n) = n^2 + 2^n
+
+Resp: O(2^n)
+
+b) f(n) = (nlog(n) + n)/n => f(n) = (nlog(n))/n + 1 => f(n) => f(n) = log(n)
+
+Resp: O(log(n))
+
+c) f(n) = (n^3/n^2) + log(n) = f(n) = n + log(n)
+
+Resp: O(n)

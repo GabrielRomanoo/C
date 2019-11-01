@@ -1,0 +1,36 @@
+5. Uma alternativa para organizar os dados numa pilha consiste no uso de um vetor aonde o
+elemento da posição 0 (zero) é usado para manter o índice do topo e os elementos da
+posição 1 em diante são utilizados para armazenar os elementos contidos na pilha.
+
+a) Que restrição existe ao tipo dos elementos que a pilha poderá conter?
+
+Resposta:
+
+Sim, pois como o indice para o topo é sempre um valor inteiro e ele será armazenado no vetor, o vetor deve ser um
+vetor de inteiros, portante, só é possivel representar uma pilha de inteiros.
+
+b) Implemente a rotina para inserir e remover os elementos da pilha.
+
+Resposta:
+
+void push(int p[], int x) {
+     if (p[0] < STACK_MAX - 1) {
+	p[++p[0]] = x;
+     }
+     else {
+	 fprintf(stderr, "Pilha cheia!\n);
+	 exit(1);
+     }
+}
+
+void pop(int p[]) {
+	if(p[0] != 0) {
+	  return p[p[0]--];
+	}
+	else {
+	fprintf(stderr, "pilha vazia\n");
+	exit(1);
+	}
+	}
+}
+

@@ -1,0 +1,43 @@
+2. Utilizando o algoritmo de avaliação da forma pós-fixa, determine os resultados das
+expressões pós-fixas obtidas no exercício anterior (mostre o conteúdo da pilha para cada
+símbolo da expressão pós-fixa).
+
+a)
+pos-fixa	simb	pilha
+524*+1-		5	5
+		2	5,2
+		4	5,2,4
+		*	5,8
+		+	13
+		1	13,1
+		-	12
+
+
+b)
+pos-fixa	simb	pilha
+36+52-/4*	3	3
+		6	3,6
+		+	9
+		5	9,5
+		2	9,5,2
+		-	9,3
+		/	3
+		4	3,4
+		*	12
+
+c)
+pos-fixa		simb	pilha
+26+81-+3/7+		2	2
+			6	2,6
+			+	8
+			8	8,8
+			1	8,8,1
+			-	8,7
+			+	15
+			3	15,3
+			/	5
+			7	5,7
+			+	12
+			
+
+

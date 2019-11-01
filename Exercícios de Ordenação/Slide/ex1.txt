@@ -1,0 +1,5 @@
+1. O que significa dizer que uma função g(n) é
+O(f(n))?
+
+Resposta: Significa que g(n) é o comportamento assintotico de f(n), ou seja,
+g(n) < f(n) quando n tende ao infinito.

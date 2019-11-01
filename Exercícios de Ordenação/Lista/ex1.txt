@@ -1,0 +1,9 @@
+1. Qual é o comportamento assintótico das funções abaixo?
+
+a) f (n) = 3·n² + 10 * n * log n
+
+Resp: O(n²)
+
+b) f (n) = n·logn + n/2
+
+Resp: O(nlogn)

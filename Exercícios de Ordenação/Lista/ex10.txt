@@ -1,0 +1,33 @@
+10. Simule a execução do algoritmo de ordenação Mergesort para um vetor de caracteres com
+as seguintes chaves: M, E, R, G, E, S, O, R, T.
+
+v [M, E, R, G, E, S, O, R, T]
+
+B [M E R G]
+
+C [E S O R T]
+
+  [E M E S  O R G R T ] <- vetor com pares de elementos ordenados
+	
+    
+______ _______
+B [E M E S]
+______ _______
+C [O R O G T]
+ 
+  [E M O R E G R S T] <- vetor com quartis ordenados
+
+___________
+B [E M O R]
+___________
+C [E G R S T]
+
+  [E E G M O R R S T] <- vetor com oito elementos ordenados
+
+B [E E G M O R R S]
+
+C [T]
+
+  [E E G M O R R S T]
+
+

@@ -1,0 +1,153 @@
+8. Simule a execução do algoritmo de ordenação Quicksort para um vetor de caracteres com
+as seguintes chaves: Q, U, I, C, K, S, O, R, T. 
+
+O vetor é varrido da esquerda para a direita até
+que seja encontrado um elemento ai = x
+Sendo então varrido da direita para a esquerda
+até que seja encontrado um elemento aj = x
+
+		0  1  2  3  4  5  6  7  8	
+		Q  U  I  C  K  S  O  R  T
+
+pivo: 8/2 = 4 (K)
+e,i = 0
+d,j = 8
+
+		Q  U  I  C  K  S  O  R  T
+		i	    P		j
+
+
+Q > K
+j = 4		Q  U  I  C  K  S  O  R  T
+		i	    P
+			    j
+
+		K  U  I  C  Q  S  O  R  T
+		P  i     j
+
+e = 0, d = 8
+i = 1		
+j = 3	
+		K  C  I  U  Q  S  O  R  T
+i = 2		P  i     j
+j = 2
+		K  C  I  U  Q  S  O  R  T
+		P     j
+		      i	
+
+i = 3		K  C  I  U  Q  S  O  R  T
+		P     j  i
+
+
+e = 0, d = 2
+
+i = 0		K  C  I  
+j = 2		i  P  j
+
+		K  C  I  
+j = 1		i  P  
+		   j
+
+i = 1		C  K  I  
+		P  
+
+
+e = 1
+d = 2
+i = 1		K  I  
+j = 2		P  j
+		i 
+
+i = 2		I  K  
+j = 1		j  P
+		   i
+
+
+		C  I  K  U  Q  S  O  R  T
+
+e = 3
+d = 8
+i = 3
+j = 8 
+
+		U Q  S  O  R  T
+		i    P	      j
+j = 7
+
+		U  Q  S  O  R  T
+		i     P	    j
+
+		R  Q  S  O  U  T
+i = 4		i     P	    j
+j = 6	
+		
+i = 5		R  Q  S  O  U  T
+		      P  j
+		      i	
+
+I = 6		R  Q  O  S  U  T
+j = 5		      j  P
+		         i
+
+e = 3
+d = 5
+i = 3
+j = 5
+
+		R  Q  O
+		i  P  j
+
+i = 4		R  Q  O
+j = 4		   P  
+		   i
+  	   	   j	
+
+		
+
+i = 5		R  Q  O
+j = 3		j  P  i
+		  
+    
+
+e = 6
+d = 8
+i = 6
+j = 8
+
+		S  U  T
+i = 7		i   P  j
+
+		S  U  T
+		   P  j
+		   i
+
+j = 7		S  T  U
+i = 8		   j  P
+		      i
+
+e = 6
+d = 7
+i = 6
+j = 7
+
+		S T
+		P j
+		i
+
+j = 6	
+
+		S T
+		P 
+		i
+		j
+
+I = 7		T S
+j = 5		  P 
+		  i
+	       j
+
+
+portanto: CIKOQRSTU
+		      
+
+		

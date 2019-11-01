@@ -1,0 +1,53 @@
+5. Qual o comportamento assintótico das funções
+em C abaixo?
+a)
+
+void f1(int n, int a[][n], int b[][n], int c[][n]) {
+ 	int i, j, k;
+ 	for (i = 0; i < n; i++)
+ 		for (j = 0; j < n; j++) {
+ 			c[i][j] = 0;
+ 			for (k = n-1; k >= 0; k--)
+ 				c[i][j] += a[i][k] * b[k][j];
+ 		}
+}
+
+Resp:
+
+somatorio de i = 0 até n-1 (somatorio de j = 0 ate n-1 * (1 + (somatorio de k = 1 ate n - 1)))
+somatorio de i = 0 até n-1 (somatorio de j = 0 ate n-1 * (1 + (n - 1 - 1 + 1))
+somatorio de i = 0 até n-1 (somatorio de j = 0 ate n-1 * (1 + (n - 1))
+somatorio de i = 0 até n-1 (somatorio de j = 0 ate n-1 * n)
+somatorio de i = 0 até n-1 (n * somatorio de j = 0 ate n-1)
+somatorio de i = 0 até n-1 (n * n)
+somatorio de i = 0 até n-1 (n²)
+n² * somatorio de i = 0 até n-1
+n² n
+n³
+
+O(n³)
+                                                                                                                                           
+
+b)
+int f2(int n) {
+ 	int i, j, x = 0, y = 0;
+ 	for (i = 1; i <= n; i++) {
+ 		for (j = i; j <= n; j++)
+ 			x++;
+ 		for (j = 1; j < i; j++)
+ 			y++;
+ 	}
+ 	return x * y;
+}
+
+Resp:
+
+somatorio de i = 1 ate n - 1 * ((somatorio de j = i ate n - 1) + (somatorio de j = 0 ate i - 1))
+somatorio de i = 1 ate n - 1 * ((somatorio de j = i ate n - 1) + i)
+somatorio de i = 1 ate n - 1 * (n - i + i)
+somatorio de i = 1 ate n - 1 * n
+(n - i)*n
+n² - ni
+
+O(n²)
+   

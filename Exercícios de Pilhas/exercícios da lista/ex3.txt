@@ -1,0 +1,9 @@
+3. Uma letra significa um push e um asterisco significa um pop na sequência a seguir. Qual o
+conteúdo da pilha após a execução dessas operações?
+L A * S T I * N * F I R * S T * * O U * T * * * * * *
+
+push(&p,x): insere o elemento x no topo da pilha p
+pop(&p): remove e devolve o elemento do topo da pilha p
+
+
+Resposta: L

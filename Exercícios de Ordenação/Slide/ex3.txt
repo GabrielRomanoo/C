@@ -1,0 +1,10 @@
+3. Indique se as afirmativas a seguir são
+verdadeiras ou falsas e justifique sua resposta:
+
+1) É melhor um algoritmo que requer 2^n passos do que um que requer 10 x n^10 passos (FALSO, pois para n >= 65 2^n > 10 x 10^n)
+
+2) 2^n+1 = O(2^n) VERDADEIRO (pois 2^n+1 = 2^n * 2)
+
+3) 2^2n = O(2^n) FALSO (pois O(2^2n) != O(2n)) 
+
+4) f(n)=O(u(n)) e g(n)=O(v(n)) => f(n)+g(n) = O(u(n)+v(n)) FALSO f(n)+g(n) = O(MAX(u(n)+v(n)))

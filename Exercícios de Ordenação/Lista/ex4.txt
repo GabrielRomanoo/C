@@ -1,0 +1,33 @@
+4. Simule a execução do algoritmo de ordenação por Shellsort para um vetor de caracteres
+com as seguintes chaves: S, H, E, L, L, S, O, R, T.
+
+/ ; ? ~ => indicação dos segmentos
+
+h = 4		S  H  E  L  L  S  O  R  T 
+		/  ;  ?  ~  /  ;  ?  ~  /
+
+		L  H  E  L  S  S  O  R  T 
+		/  ;  ?  ~  /  ;  ?  ~  /
+
+h = 2 		L  H  E  L  S  S  O  R  T 
+		/  ;  /	 ;  /  ;  /  ;  /
+
+		E  H  L  L  O  S  S  R  T 
+		/  ;  /	 ;  /  ;  /  ;  /
+
+		E  H  L  L  O  R  S  S  T 
+		/  ;  /	 ;  /  ;  /  ;  /
+
+h = 1		E  H  L  L  O  R  S  S  T 
+		
+
+
+
+
+
+
+
+
+
+
+

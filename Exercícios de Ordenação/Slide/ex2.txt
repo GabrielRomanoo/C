@@ -1,0 +1,4 @@
+2. O que significa dizer que um algoritmo executa
+em tempo proporcional a n?
+
+Resposta: Que a sua complexidade assintotica é O(n);  Cada vez que n dobra de tamanho, o tempo de execução também dobra
