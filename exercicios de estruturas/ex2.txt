@@ -1,0 +1,24 @@
+2. Considere a estrutura data abaixo:
+struct data {
+   int dia;
+   char mes[10];
+   int ano;
+};
+Quais  instruções  inicializam  corretamente  o valor  do membro  dia  com 10, o de  mes
+"outubro" e o valor de ano com 2018?
+a) struct data dt1 = { 10, "outubro", 2018 };
+b) struct data dt2 = { 10, .ano = 2018, "outubro" };  //nao existe nenhum membro seguinte a no depois que voce incializa ano. teria que inicializar .mes = "outubro"
+c) struct data dt3 = {.mes = "outubro", 2018, .dia = 10 };
+d) struct data dt4 = { .ano = 2018, .dia = 10, "outubro" };
+e) struct data dt5 = { .ano = 2018, .mes = "outubro", 10 }; // o membro membro seguinte a mes é ano
+
+sem a inicializacao explicita .ano ou .mes ou .dia, é preciso botar na ordem correta (dia, mes, ano), senao estara incorreto
+
+Resposta:
+
+a) struct data dt1 = { 10, "outubro", 2018 };
+
+c) struct data dt3 = {.mes = "outubro", 2018, .dia = 10 }; 
+
+d) struct data dt4 = { .ano = 2018, .dia = 10, "outubro" };
+

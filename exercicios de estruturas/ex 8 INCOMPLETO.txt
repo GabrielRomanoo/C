@@ -1,0 +1,13 @@
+8. Declare   uma   enumeração   chamada  resposta  que   defina   as   constantes  NAO,  SIM  e
+TALVEZ com os valores 0, 1 e 2, respectivamente
+
+enum resposta { NAO = 0, SIM = 1, TALVEZ = 2 };
+
+enum resposta resp
+
+OU
+
+prof:
+
+typedef enum { NAO, SIM, TALVEZ } resposta;
+

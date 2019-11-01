@@ -1,0 +1,32 @@
+1)Escreva a documentação correta da função
+abaixo:
+int soma (int n, int v[]) 
+{
+   int i, x = 0;
+   for (i = 0; i < n; i++) {
+      x += v[i];
+   }
+   return x;
+}
+
+Resposta: 
+
+/*
+a funcao retorna a soma dos elementos do vetor v e que tem n elementos, com n >=1
+*/
+
+int soma (int n, int v[]) 
+{
+   int i, x = 0;
+   for (i = 0; i < n; i++) {
+      x += v[i];
+   }
+   return x;
+}
+
+
+Feito pelo professor:
+
+/*
+a funcao que recebe um numero n>=1 e um vetor de n elementos v e devolve o somatorio dos elementos de v
+*/

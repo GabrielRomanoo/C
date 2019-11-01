@@ -1,0 +1,18 @@
+7. Considere as definições abaixo:
+typedef union {
+ int ivalue;
+ double dvalue;
+ char str[20];
+} flexivel;
+Quais das instruções abaixo são corretas?
+(  F ) flexivel var1 = {"unisantos"};       //NAO DIZ PRA ONDE VAI, SE VAI PRO IVALUE, DVALUE (ELE IA TENTAR BOTAR NO IVALUE)
+
+(  F ) flexivel var2 = {.dvalue = 2.5} ;     //O PRINTF TEM Q SER %LF
+ printf("%d\n", var2.ivalue);
+
+(  V ) flexivel var3[] = {{5}, {.dvalue = 0.75}, {.str = "teste"}}; //5 ESTA SEM O .IVALUE PQ ELE É O PRIMEIRO, ENTAO SE NAO TIVER A DECLARACAO 
+														ELE VAI ATOMATICAMENTE PRO PRIMEIRO (cada uniao esta usando um membro diferente da union)
+
+(  F ) union flexivel var4 = {10};  //NAO PODE BOTAR UNION QUANDO TA COM O TYPEDEF, entao nao existe union flexivel, e sim apenas flexivel
+
+(  F ) flexivel var5 = {5, .dvalue = 7.5, .str = "OK"};  // ERRO DE COMPILACAO, NAO PODE ATRIBUI VALORES A TODOS OS MEMBROS DA UNION, A NAO SER Q SEJA VETOR (AÍ O VALOR MULTIPLICA PELA N DO VETOR VET[N])

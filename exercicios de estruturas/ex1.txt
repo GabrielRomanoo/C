@@ -1,0 +1,25 @@
+1. O que está errado nas definições das estruturas em C abaixo:
+a) structure ponto { double x, y; }
+b) struct { double x, double y; };
+c) struct ponto ( double x; double y );
+d) struct ponto { double x; double y; }
+
+Resposta:
+
+a) struct ponto { double x, y;}; 
+Ponto e virgula no final
+
+b) struct "x" { double x; double y; };
+
+x = estrutura anonima sem a declaracao de variaveis desse tipo(sem o func)
+
+c) struct ponto { double x; double y };
+
+o uso dos "{ }" e o ; depois de y
+
+d) struct ponto { double x; double y; };
+
+Falta o ; no final
+
+
+

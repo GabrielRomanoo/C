@@ -1,0 +1,6 @@
+9. Declare uma enumeração chamada  direcoes  que defina as constantes  NORTE,  SUL,
+LESTE e OESTE com os valore 90, 270, 0 e 180, respectivamente.
+
+typedef enum { NORTE = 90, SUL = 270, LESTE = 0, OESTE = 180} direcoes;
+
+typedef enum { LESTE ,NORTE = 90, SUL = 270, OESTE = 180} direcoes;
