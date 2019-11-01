@@ -1,0 +1,5 @@
+1. Considere um módulo de funções em C cujo nome é estatistica.c e responda:
+a) Como deve se chamar o arquivo de cabeçalho deste módulo?
+R: estatistica.h
+b) Como deve se chamar a constante no arquivo de cabeçalho que identifica o módulo?
+R: #define _ESTATISTICA_H
