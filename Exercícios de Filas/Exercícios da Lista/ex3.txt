@@ -1,0 +1,32 @@
+3. Qual a saída do programa abaixo?
+
+#include <stdio.h>
+#include "pilha.h"
+#include "fila.h"
+
+int main() {
+
+	pilha p;		//declaração
+	fila f;
+
+	stack_init(&p);		//inicialização
+	queue_init(&f);
+
+	enqueue(&f, 4);		//fila: [4]
+	enqueue(&f, 7);		//fila: [4,7]
+	push(&p, 3);		//pilha: 3
+	push(&p, 2);		//pilha: 2,3
+	while(!queue_isempty(f))
+		push(&p, dequeue(&f)); //pilha: 7,4,2,3
+	while(!stack_isempty(p))
+		enqueue(&f, pop(&p));	fila: [7,4,2,3]
+	while(!queue_isempty(f))
+		printf("%d\n", dequeue(&f));
+	return 0;
+}
+
+Saída: 
+7
+4
+2
+3

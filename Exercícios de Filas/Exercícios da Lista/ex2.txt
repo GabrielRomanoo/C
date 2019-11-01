@@ -1,0 +1,44 @@
+2. Uma letra significa um enqueue (INSERIR) e um asterisco significa um dequeue (REMOVER) na sequência a
+seguir. Dê a sequência de valores devolvidos pela operação dequeue quando essa
+sequência de operações é executada em uma fila do tipo FIFO inicialmente vazia.
+E A S * Y * Q U E * * * S T * * * I O * N * * *
+
+PILHA		ENQUEUE		DEQUEUE
+-		   E		   -			
+E		   A		   -			
+EA		   S		   -		
+EAS		   -		   -
+EAS		   -		   *
+EA		   -    	   -
+EA		   Y 		   -
+EAY		   -               -
+EA		   -               *
+EA		   Q		   -
+EAQ		   U		   -
+EAQU		   E		   -
+EAQUE		   -               -
+EAQUE		   -               *
+EAQU		   -               *
+EAQ		   -               *
+EA		   -               -
+EA		   S		   -
+EAS		   T 		   -
+EAST		   -               -
+EAST		   -               *
+EAS		   -               *
+EA		   -               *
+E		   -               -
+E		   I               -
+EI		   O               -
+EIO		   -               -
+EIO		   -               *
+EI		   -               -	
+EI		   N               -
+EIN		   -               -
+EIN	  	   -               *
+EI		   -               *
+E		   -               *
+-		   -		   -
+
+Resposta: Fila Vazia!
+		  
