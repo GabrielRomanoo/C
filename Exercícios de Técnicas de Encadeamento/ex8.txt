@@ -1,0 +1,9 @@
+8. Em uma lista circular duplamente encadeada com n elementos, o espaço ocupado apenas
+pelos ponteiros é (assuma que um ponteiro ocupa p bytes):
+a) np
+b) 2np
+c) 4np
+d) 6np
+e) (np)²
+
+Resposta: letra b

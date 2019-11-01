@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1557459774 source:d:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\main.c
+	"listaenc.h"
+	<stdio.h>
+
+1557337148 d:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\listaord.h
+	<stdbool.h>
+
+1557337310 source:d:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\listaord.c
+	"listaord.h"
+	<stdlib.h>
+	<stdio.h>
+
+1557358564 source:e:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\main.c
+	"listaenc.h"
+	<stdio.h>
+
+1557337148 e:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\listaord.h
+	<stdbool.h>
+
+1557358716 source:e:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\listaenc.c
+	"listaenc.h"
+
+1557358056 e:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\listaenc.h
+	<stdbool.h>
+	<stdlib.h>
+	<stdio.h>
+
+1557459734 source:d:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\listaenc.c
+	"listaenc.h"
+
+1557422474 d:\unisantos\faculdade\3° semestre\estrutura de dados i\exercícios\exercícios de técnicas de encadeamento\ex2\listaenc.h
+	<stdbool.h>
+	<stdlib.h>
+	<stdio.h>
+

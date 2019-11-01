@@ -1,0 +1,86 @@
+2. Desenvolva algoritmos recursivos para os seguintes problemas:
+
+a) Impressão de uma lista encadeada simples em ordem decrescente;
+
+void lst_print_inverse(lst_ptr l) {
+
+	if (l != NULL) { // <- solução trivial
+	
+		lst_print_inverse(l->prox);
+		printf("%d\n", l->dado);
+
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+b) Impressão de um número natural na base binária;
+
+void dec2bin(int n) {
+	
+	if (n < 2) { // <- solução trivial (o resto é geral)
+		printf("%d\n", n);
+	}
+	else {
+		dec2bin(n / 2);
+		printf("%d\n", n % 2);
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+c) Cálculo de 1 + 1/2 + 1/3 + 1/4 + ... + 1/n
+
+double seq1(int n) {
+
+	if (n == 0) { //solução trivial
+		return 0;
+	}
+	return 1.0/n + seq1(n-1);
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+d) Cálculo de 2/4 + 5/5 + 10/6 + 17/7 + ... + (n² + 1)/(n + 3)
+
+double seq2(int n) {
+
+	if (n == 0) { //solução trivial
+		return 0;
+	}
+	else {
+		return (n * n + 1.0)/(n + 3) + seq2(n - 1);
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+e) Gerador da sequência dada por:
+i. f(1) = 1
+ii. f(2) = 2
+iii. f(n) = 2 * f(n-1) + 3 * f(n-2)
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+f) Gerador da sequência de Ackerman:
+i. A(m, n) = n + 1, se m = 0
+ii. A(m, n) = A(m-1, 1), se m ? 0 e n = 0
+iii. A(m, n) = A(m-1, A(m, n-1))
+
+int ackerman(int m , int n) {
+
+	if (m == 0) {
+		return n + 1; // <- solução trivial
+	}
+	if (n == 0) {
+		return ackerman(m-1,1);
+	}
+	return ackerman(m - 1, ackerman(m, n-1));
+}
+
+
+
+
+
+
