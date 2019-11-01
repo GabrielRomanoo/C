@@ -1,0 +1,8 @@
+test_filapri: test_filapri.o filapri.o
+	gcc -o test_filapri test_filapri.o filapri.o
+	
+test_filapri.o: test_filapri.c filapri.h
+	gcc -c test_filapri.c
+	
+filapri.o: filapri.c filapri.h
+	gcc -c filapri.c	
