@@ -1,0 +1,11 @@
+3. Qual a diferença entre arquivo serial e arquivo sequencial?
+
+Resposta:
+
+Um arquivo serial, tem os registros dispostos desordenadamente, sem uma logíca na gravação.
+Já o arquivo sequencial, os registros são dispostos ordenadamente, obdecendo uma sequencia determinada por uma chama primaria, chamada de chave de ordenação
+
+Resposta do professor: 
+
+Um arquivo serial não possui nenhum critério de ordenação de seus registros logicos, enquanto um arquivo sequencial é ordenado pelo valor da chave primaria dos 
+registros logicos.

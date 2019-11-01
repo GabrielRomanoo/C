@@ -1,0 +1,15 @@
+12. Corrija a definição no item d) da questão anterior para torná-la mais confiável
+
+d) #define NEW(x) x + 5
+y = NEW(y);
+berg = NEW(berg) * lob;
+est = NEW(berg) / NEW(y);
+nilp = lob * NEW(-berg);
+
+CORRIGINDO: 
+
+ #define NEM(x) ((x) + 5)
+y = NEM(y);
+berg = ((berg)+ 5) * lob;
+est = ((berg) + 5)/ ((y) + 5);
+nilp = lob * ((-berg) + 5);

@@ -1,0 +1,92 @@
+4. Considere o arquivo sequencial abaixo, cuja chave primária (chave de ordenação) é o campo Matrícula e utiliza o
+campo Removido para indicar que o registro foi removido:
+
+Endereço 	Matrícula 	Nome 			Curso 	Idade 	Removido
+1 		201801 		Pedro de Souza 		CC 	20 	false
+2 		201804		Ana Rita		CC 	21 	false
+3 		201805 		Cláudio Oliveira 	SI 	18 	true
+4 		201808 		Vitória Talita 		CC 	19 	false
+5 		201809 		Emanuel Ribeiro 	SI 	18 	false
+6 		201811 		Marcos Medeiros 	SI 	19 	false
+	
+Responsa as questões a seguir:
+
+a) Quais são os campos dos registros lógicos do arquivo?
+
+Resposta: 
+Os campos são: Matricula, Nome, Curso, Idade, Removido. (endereço nao é um campo dos registros logicos)
+
+
+b) Qual é a chave do registro no endereço 3?
+
+Resposta:
+201805
+
+
+c) Que registro seria devolvido por um argumento de pesquisa igual a 201805 para a chave
+de acesso Matrícula? 
+
+Resposta:
+Nenhum registro seria devolvido, pois o registro com chave 201805 está marcado como removido.
+ 
+
+d) Quais registros seriam devolvidos por um argumento de pesquisa igual “CC” para a
+chave de acesso “Curso”?
+
+Resposta:
+{201801, Pedro de Souza, CC, 20, false}, {201804, Ana Rita, CC,	21, false}, {201808, Vitória Talita, CC, 19, false};
+
+ 
+e) Como ficaria o arquivo após a inserção do registro {201807, “José da Silva”, “CC”,
+19}?
+
+Resposta: 
+
+Endereço 	Matrícula 	Nome 			Curso 	Idade 	Removido
+1 		201801 		Pedro de Souza 		CC 	20 	false
+2 		201804		Ana Rita		CC 	21 	false
+3 		201805 		Cláudio Oliveira 	SI 	18 	true
+4		201807		José da Silva		CC	19	false
+5 		201808 		Vitória Talita 		CC 	19 	false
+6 		201809 		Emanuel Ribeiro 	SI 	18 	false
+7 		201811 		Marcos Medeiros 	SI 	19 	false
+
+Ele bota na ordem pq o arquivo é sequencial. Se fosse sequencial indexado, o arquivo tambem ia ficar ordenado mas o arquivo indexado nao (ver isso no slide 25);
+
+
+f) Como ficaria o arquivo após a remoção do registro com chave de acesso igual a 201804?
+
+Resposta: 
+
+
+Endereço 	Matrícula 	Nome 			Curso 	Idade 	Removido
+1 		201801 		Pedro de Souza 		CC 	20 	false
+2 		201804		Ana Rita		CC 	21 	TRUE	
+3 		201805 		Cláudio Oliveira 	SI 	18 	true
+4		201807		José da Silva		CC	19	false
+5 		201808 		Vitória Talita 		CC 	19 	false
+6 		201809 		Emanuel Ribeiro 	SI 	18 	false
+7 		201811 		Marcos Medeiros 	SI 	19 	false
+
+g) Qual seria o resultado de uma leitura exaustiva de arquivo?
+
+Resposta:
+
+{201801, Pedro de Souza, CC, 20, false}, {201807, José da Silva, CC, 19, false}, {201808, Vitória Talita, CC, 19, false},
+{201809, Emanuel Ribeiro, SI, 18, false}, {201811, Marcos Medeiros, SI, 19, false}
+
+
+
+h) Como ficaria o arquivo após sua reorganização?
+
+Resposta:
+
+Endereço 	Matrícula 	Nome 			Curso 	Idade 	Removido
+1 		201801 		Pedro de Souza 		CC 	20 	false
+2		201807		José da Silva		CC	19	false
+3 		201808 		Vitória Talita 		CC 	19 	false
+4 		201809 		Emanuel Ribeiro 	SI 	18 	false
+5 		201811 		Marcos Medeiros 	SI 	19 	false
+
+
+

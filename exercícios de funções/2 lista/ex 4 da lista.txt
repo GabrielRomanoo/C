@@ -1,0 +1,25 @@
+4. Qual a saída do programa abaixo?
+#include <stdio.h>
+int fun1(int);
+void fun2(int, int *, int *);
+int main()
+{
+int x = 4, y = 2, z;
+fun2(fun1(x), &y, &z); // fun2(12, &y, &z)
+printf("x = %d, y = %d, z = %d\n", x, y, z);
+return 0;
+}
+int fun1(int x)
+{
+x *= 3;    // x = 4x3 => x = 12  
+return x;
+}
+void fun2(int x, int * y, int * z)
+{
+*y += x / 2; // y = 2 + 12 / 2 => y = 2 + 6 => y = 8
+*z = x + *y; // z = 12 + 8 => y = 20
+}
+
+
+saída: x = 4, y = 8, z = 20
+

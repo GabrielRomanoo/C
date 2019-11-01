@@ -1,0 +1,29 @@
+11. Considere os grupos de uma ou mais diretivas seguidas pelos códigos que as utilizam
+abaixo. Qual é o código resultante em cada caso? É um código válido? Assuma que as
+variáveis foram declaradas.
+a) #define KPH 95 /* Km por hora */
+dist = KPH * tempo;
+b) #define METROS 4
+#define POD METROS + METROS
+plort = METROS * POD;
+c) #define SEIS = 6;
+num = SEIS;
+d) #define NEW(x) x + 5
+y = NEW(y);
+berg = NEW(berg) * lob;
+est = NEW(berg) / NEW(y);
+nilp = lob * NEW(-berg);
+
+a) dist = 95 * tempo; VALIDO
+
+b) plort = 4 * 4 + 4; VALIDO //problema de prioridade na soma e multiplicacao
+
+c) num = = 6;; ;INVALIDO pois nao existe o '=' em define. O '=' e ';' seria o texto de define
+   
+d) macro é umua diretiva de define com argumentos
+
+   y = y + 5; // VALIDO
+   berg = berg + 5 * lob; //VALIDO
+   est = berg + 5 / y + 5; //VALIDO
+   nilp = lob *  -berg + 5  //VALIDO
+

@@ -1,0 +1,10 @@
+2. Qual a diferença entre registro lógico e registro físico?
+
+Resposta:
+
+Um registro lógico é uma sequencia de itens, sendo cada item um campo ou atributo.
+Já o registro físico, são blocos de registros lógicos.
+
+Resposta do professor: 
+
+Um registro lógico é um conjunto de campos ou atributos, enquanto um registro físico é um bloco de dados que pode conter varios registros logicos

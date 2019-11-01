@@ -1,0 +1,28 @@
+10. Qual a saída do programa abaixo?
+#include <stdio.h>
+int x;
+void fun(void);
+int main() {
+ printf("main: x = %d\n", x++);
+ fun();
+ printf("main: x = %d\n", x++);
+ fun();
+ printf("main: x = %d\n", x++);
+ return 0;
+}
+void fun() {
+ static int y;  //continua mantendo seu valor mesmo encerrando a funcao
+ printf("fun: x = %d, y = %d\n", x, y++);
+ auto int x = y * 2;                       <- passa por cima do x global
+ printf("fun: x = %d, y = %d\n", x, y++);
+}
+
+SAÍDA: 
+x = 0
+x = 1, y = 0
+x = 2, y = 1  <- esse x é diferente do x global
+x = 1
+x = 2, y = 2
+x = 6, y = 3
+x = 2
+ 

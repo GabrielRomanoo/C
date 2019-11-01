@@ -1,0 +1,14 @@
+1. a) int quadrado(int x); (é o ponto e virgula o erro)
+
+"NÃO HÁ A ; APOS OS PAREMTROS NA IMPLEMENTAÇÃO DA FUNÇÃO"
+
+b) int soma(int x, y) (o erro é que depois de "int x," não está "int y" e sim apenas "y")
+
+"O TIPO DO PARAMETRO Y NAO FOI DEFINIDO"
+
+c) void foo(float a) {  <- ja foi declara aqui (esse a é apenas uma copia de a de int)
+     float a;			<- o erro é esse 
+     printf("%f\n", a);
+   }
+
+"NAO É POSSIVEL TER UMA VARIAVEL LOCAL COM O MESMO NOME DE UM PARAMETRO DA FUNÇÃO"

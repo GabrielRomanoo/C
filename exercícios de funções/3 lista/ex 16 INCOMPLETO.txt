@@ -1,0 +1,9 @@
+16. Suponha a seguinte definição:
+#define ABS(a) a < 0 ? -a : a
+Qual seria o valor de z na seguinte expressão: z = ABS(10-20);
+O que você poderia fazer para que a macro funcionasse corretamente?
+
+
+o valor de z seria -30
+
+botaria  ABS(a) ((a) < (0) ? (-(a)) : (a))

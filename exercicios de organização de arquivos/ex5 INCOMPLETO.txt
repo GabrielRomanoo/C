@@ -1,0 +1,90 @@
+5. Considere que o arquivo sequencial mostrado na figura do exercício anterior e transforme­o
+em um arquivo sequencial indexado pelo campo Nome. Depois realize as operações dos
+itens e), f) g) e h) do exercício anterior.
+
+e) Como ficaria o arquivo após a inserção do registro {201807, “José da Silva”, “CC”, 19}?
+
+Resposta: 
+
+Endereço 	Matrícula 	Nome 			Curso 	Idade 	Removido
+
+
+1 		201801 		Pedro de Souza 		CC 	20 	false
+2 		201804		Ana Rita		CC 	21 	false
+3 		201805 		Cláudio Oliveira 	SI 	18 	true
+4		201807		José da Silva		CC	19	false
+5 		201808 		Vitória Talita 		CC 	19 	false
+6 		201809 		Emanuel Ribeiro 	SI 	18 	false
+7 		201811 		Marcos Medeiros 	SI 	19 	false
+
+Nome 			Endereço
+
+Ana Rita 		2
+Cláudio Oliveira	3
+Emanuel Ribeiro		6
+José da Silva		4
+Marcos Medeiros		7
+Pedro de Souza		1
+Vitória Talita		5
+
+
+
+f) Como ficaria o arquivo após a remoção do registro com chave de acesso igual a 201804?
+
+Resposta: 
+
+Endereço 	Matrícula 	Nome 			Curso 	Idade 	Removido
+
+
+1 		201801 		Pedro de Souza 		CC 	20 	false
+2 		201804		Ana Rita		CC 	21 	true
+3 		201805 		Cláudio Oliveira 	SI 	18 	true
+4		201807		José da Silva		CC	19	false
+5 		201808 		Vitória Talita 		CC 	19 	false
+6 		201809 		Emanuel Ribeiro 	SI 	18 	false
+7 		201811 		Marcos Medeiros 	SI 	19 	false
+
+Nome 			Endereço
+
+Ana Rita 		2
+Cláudio Oliveira	3
+Emanuel Ribeiro		6
+José da Silva		4
+Marcos Medeiros		7
+Pedro de Souza		1
+Vitória Talita		5
+
+
+g) Qual seria o resultado de uma leitura exaustiva de arquivo?
+
+Resposta: 
+
+Chave Primaria:
+{201801, Pedro de Souza, CC, 20, false}, {201807, José da Silva, CC, 19, false}, {201808, Vitória Talita, CC, 19, false}, 
+{201809, Emanuel Ribeiro, SI, 18, false}, {201811, Marcos Medeiros, SI,	19, false}
+
+Chave Secundaria:
+{201809, Emanuel Ribeiro, SI, 18, false}, {201807, José da Silva, CC, 19, false}, {201811, Marcos Medeiros, SI,	19, false},
+{201801, Pedro de Souza, CC, 20, false}, {201808, Vitória Talita, CC, 19, false}
+
+
+h) Como ficaria o arquivo após sua reorganização?
+
+Resposta: 
+
+Endereço 	Matrícula 	Nome 			Curso 	Idade 	Removido
+
+
+1 		201801 		Pedro de Souza 		CC 	20 	false
+2		201807		José da Silva		CC	19	false
+3 		201808 		Vitória Talita 		CC 	19 	false
+4 		201809 		Emanuel Ribeiro 	SI 	18 	false
+5 		201811 		Marcos Medeiros 	SI 	19 	false
+
+Nome 			Endereço
+
+Emanuel Ribeiro		4
+José da Silva		2
+Marcos Medeiros		5
+Pedro de Souza		1
+Vitória Talita		3

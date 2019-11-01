@@ -1,0 +1,13 @@
+1. Qual a diferença entre acesso aleatório e acesso sequencial?
+
+Resposta: 
+
+Um acesso sequencial não usa o indice, ele usa a chave de acesso e verifica se é diferente da chave de ordenação. 
+Já o acesso aleatório, o argumento de pesquisa define o caminhamento sobre o índice.
+
+
+Resposta do professor: 
+
+O acesso aleatório (ou direto) é possível que o endereço do registro lógico que contém o argumento de busca é conhecido, nesse caso, pode-se fazer o acesso a esse
+registro através de uma unica operação de leitura.
+O acesso sequencial exige uma leitura sequencial dos registros logicos do arquivo ate que o registro que contém o argumento de busca seja localizado.

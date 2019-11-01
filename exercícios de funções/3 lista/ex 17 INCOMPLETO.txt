@@ -1,0 +1,6 @@
+17. Seja a seguinte macro:
+#define MSG "Isto é um teste"
+O que será impresso após os comandos abaixo?
+a) printf(MSG); -> "Isto é um teste"
+b) printf("MSG"); -> "MSG"
+
