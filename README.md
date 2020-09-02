@@ -1,2 +1,2 @@
 # Códigos em C
-Repositório criado para armazenar os códigos e projetos de estudo.
+- Repositório criado para armazenar códigos e projetos de estudo da linguagem.
